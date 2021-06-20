@@ -1,7 +1,7 @@
 // See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -16,7 +16,7 @@ static const char col_cyan[]        = "#9932cc";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, "#00121D" },
-	[SchemeSel]  = { col_gray4, col_cyan,  "#335E69" },
+	[SchemeSel]  = { col_gray4, col_cyan,  "#9932cc" },
 };
 
 static const char *const autostart[] = {
@@ -67,7 +67,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *browser[] =  {"firefox-nightly"};
+static const char *browser[] =  {"firefox"};
 static const char *editor[] = {"atom", NULL};
 
 static Key keys[] = {
