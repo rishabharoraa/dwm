@@ -1,7 +1,7 @@
 # dwm
 My fork of dwm, the window manager that sucks less
 
-![image](./preview.png)
+![image](https://i.imgur.com/SGADf6d.png)
 
 Installation
 ```
